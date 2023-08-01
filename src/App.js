@@ -8,19 +8,8 @@ function App() {
   ]
   return (
     <div>
-
-      <ExpenseItem
-        title={expenses[0].title}
-        location={expenses[0].location}
-        date={expenses[0].date}
-        amount = {expenses[0].amount}>
-      </ExpenseItem>
-      <ExpenseItem
-        title={expenses[1].title}
-        location={expenses[1].location}
-        date={expenses[1].date}
-        amount = {expenses[1].amount}>
-      </ExpenseItem>
+      <ExpenseItem expense={expenses[0]}></ExpenseItem>
+      <ExpenseItem expense={expenses[1]}></ExpenseItem>
     </div>
 
   );
